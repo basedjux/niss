@@ -1,0 +1,22 @@
+#!/bin/bash
+
+PACKAGE_ARRAY=(next@latest react@latest react-dom@latest gulp@latest gulp-plumber@latest gulp-postcss@latest precss@latest pump@latest xo@latest lost@latest)
+
+spitFormattedArray() {
+    count=0
+    while [ "x${PACKAGE_ARRAY[count]}" != "x" ]
+    do
+        echo "      Installing package: ${PACKAGE_ARRAY[count]}"
+        count=$(($count + 1))
+    done
+}
+
+if [ -e "package.json" ]
+then
+    echo "Installing Latest [STABLE]Next.JS w/Deps and my other utilities I use."
+    spitFormattedArray
+    npm i --save ${PACKAGE_ARRAY[@]}
+
+else
+    echo "No package.json file is present! Please install in your project directory where a package.json file is present!"
+fi
