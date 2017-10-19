@@ -1,4 +1,4 @@
-# NISS - Next Install Set-up Script
+# NISS - NextJS Install Set-up Script
 
 Place into any folder you want and either add to your `$PATH` or if it's already added use away!
 
