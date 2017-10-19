@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir NISS_TEST
+cd NISS_TEST
+
+# Will throw error is no package.json is present!
+bash ../niss
+
+# Cleanup
+rm -rf NISS_TEST
