@@ -13,7 +13,7 @@ spitFormattedArray() {
 
 if [ -e "package.json" ]
 then
-    echo "Installing Latest [STABLE]Next.JS w/Deps and my other utilities I use."
+    echo "Installing Latest [STABLE]Next.JS w/Deps and my other utilities."
     spitFormattedArray
     npm i --save ${PACKAGE_ARRAY[@]}
 
